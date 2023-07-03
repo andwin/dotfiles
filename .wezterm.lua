@@ -13,7 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'AdventureTime'
+config.color_scheme = 'Dracula'
 config.font = wezterm.font 'Fira Code'
 config.font_size = 14.0
 
