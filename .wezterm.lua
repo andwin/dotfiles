@@ -1,5 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 -- This table will hold the configuration.
 local config = {}
@@ -16,6 +17,11 @@ end
 config.color_scheme = 'Dracula'
 config.font = wezterm.font 'Fira Code'
 config.font_size = 14.0
+
+config.keys = {
+  { key = 'LeftArrow', mods = 'CTRL|CMD', action = act.MoveTabRelative(-1) },
+  { key = 'RightArrow', mods = 'CTRL|CMD', action = act.MoveTabRelative(1) },
+}
 
 -- and finally, return the configuration to wezterm
 return config
