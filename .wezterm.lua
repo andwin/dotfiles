@@ -9,7 +9,11 @@ end
 
 config.color_scheme = 'Dracula (base16)'
 config.font = wezterm.font 'Fira Code'
-config.font_size = 14.0
+config.font_size = 15.0
+
+config.dpi_by_screen = {
+  ['Built-in Retina Display'] = 160,
+}
 
 config.keys = {
   { key = 'LeftArrow', mods = 'CTRL|CMD', action = act.MoveTabRelative(-1) },
