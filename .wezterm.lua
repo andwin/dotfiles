@@ -7,7 +7,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.color_scheme = 'Dracula'
+config.color_scheme = 'Dracula (base16)'
 config.font = wezterm.font 'Fira Code'
 config.font_size = 14.0
 
