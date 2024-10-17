@@ -18,8 +18,8 @@ config.dpi_by_screen = {
 config.keys = {
   { key = 'LeftArrow', mods = 'CTRL|CMD', action = act.MoveTabRelative(-1) },
   { key = 'RightArrow', mods = 'CTRL|CMD', action = act.MoveTabRelative(1) },
-  { key = 'd', mods = 'CMD', action = wezterm.action.SplitHorizontal() },
-  { key = 'd', mods = 'CMD|SHIFT', action = wezterm.action.SplitVertical() },
+  { key = 'd', mods = 'CMD', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+  { key = 'd', mods = 'CMD|SHIFT', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
 }
 
 config.mouse_bindings = {
